@@ -27,20 +27,23 @@ if (filter) {
 }
 
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  // freeMode: true,
+  slidesPerView: 3,
+  freeMode: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  breakpoints:{
-  1200: {
-    slidesPerView: 3
-  },
-  790 :{
-    slidesPerView: 2
-  }
+  // breakpoints:{
+  // 1200: {
+  //   slidesPerView: 3
+  // },
+  // 790 :{
+  //   slidesPerView: 2
+  // },
+  // 250: {
+  //   slidesPerView: 1
+  // }
 }
-});
+);
 
 
