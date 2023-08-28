@@ -616,6 +616,7 @@ body._lock {
 
 .why {
   padding-top: 163px;
+  position: relative;
 }
 .why__title {
   text-align: center;
@@ -651,8 +652,15 @@ body._lock {
     margin: 0 auto;
   }
 }
+.why__deco {
+  position: absolute;
+  bottom: -600px;
+  z-index: -10;
+  left: clamp(-12.5rem, -15.89rem + 16.95vw, 0rem);
+}
 
 .houses {
+  position: relative;
   margin-top: 160px;
   padding: 160px 0;
   background: linear-gradient(270deg, #1a242f 0.01%, rgba(26, 36, 47, 0) 100%);
@@ -716,9 +724,20 @@ body._lock {
 .houses__btn {
   margin-top: 45px;
 }
+.houses__deco {
+  position: absolute;
+  right: 0;
+  top: 90%;
+}
+@media (max-width: 449px) {
+  .houses__deco {
+    top: 95%;
+  }
+}
 
 .lets {
   margin: 180px 0;
+  position: relative;
 }
 .lets__container {
   display: flex;
@@ -733,4 +752,85 @@ body._lock {
 }
 .lets__desc {
   margin-top: 20px;
+}
+.lets__deco {
+  position: absolute;
+  z-index: -10;
+}
+.lets__btn {
+  margin-top: 16px;
+}
+
+.footer {
+  background-color: #1a242f;
+  padding-top: 140px;
+}
+.footer__cards {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .footer__cards {
+    flex-direction: column;
+  }
+}
+.footer__card {
+  margin-bottom: 100px;
+}
+@media (max-width: 900px) {
+  .footer__card {
+    margin-bottom: 10px;
+  }
+}
+.footer__textt {
+  max-width: 340px;
+  margin-bottom: 34px;
+  margin-top: 22px;
+}
+.footer__text {
+  transition: 0.2s;
+}
+.footer__text:hover {
+  color: #858585;
+}
+.footer__icons {
+  display: flex;
+  gap: 31px;
+}
+.footer__title {
+  margin-bottom: 11px;
+}
+.footer__cont {
+  display: flex;
+  flex-direction: column;
+}
+.footer__line {
+  height: 1px;
+  width: 100%;
+  background-color: #303a44;
+  margin-bottom: 15px;
+}
+.footer__copy {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.quote__quotes {
+  color: #1aa090;
+  font-size: 260px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transform: rotate(180deg);
+  text-align: right;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.review__text {
+  padding-top: -400px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 157%;
+  text-transform: capitalize;
 }/*# sourceMappingURL=index.css.map */

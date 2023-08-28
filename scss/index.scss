@@ -669,6 +669,7 @@ body {
 
 .why {
   padding-top: 163px;
+  position: relative;
   &__container {
   }
 
@@ -709,9 +710,16 @@ body {
       margin: 0 auto;
     }
   }
+  &__deco {
+    position: absolute;
+    bottom: -600px;
+    z-index: -10;
+    left: clamp(-12.5rem, -15.89rem + 16.95vw, 0rem);
+  }
 }
 
 .houses {
+  position: relative;
   margin-top: 160px;
   padding: 160px 0;
   background: linear-gradient(270deg, #1a242f 0.01%, rgba(26, 36, 47, 0) 100%);
@@ -730,7 +738,7 @@ body {
     @media (max-width: 1400px) {
       margin-bottom: 40px;
     }
-    @media (max-width: 448px){
+    @media (max-width: 448px) {
       flex-direction: column;
       margin-right: 0;
     }
@@ -749,26 +757,35 @@ body {
       width: 250px;
       height: 450px;
     }
-    @media (max-width: 546px){
-        width: 200px;
-        height: 350px;
+    @media (max-width: 546px) {
+      width: 200px;
+      height: 350px;
     }
-    @media (max-width: 448px){
+    @media (max-width: 448px) {
       width: 350px;
-      height: 450px;  
+      height: 450px;
     }
   }
   &__btn {
     margin-top: 45px;
   }
+  &__deco {
+    position: absolute;
+    right: 0;
+    top: 90%;
+    @media (max-width: 449px) {
+      top: 95%;
+    }
+  }
 }
 
 .lets {
   margin: 180px 0;
+  position: relative;
   &__container {
     display: flex;
-    @media (max-width: 1400px){
-        flex-direction: column;
+    @media (max-width: 1400px) {
+      flex-direction: column;
     }
   }
   &__text {
@@ -777,5 +794,116 @@ body {
   &__desc {
     margin-top: 20px;
   }
+  &__deco {
+    position: absolute;
+    z-index: -10;
+  }
+  &__btn {
+    margin-top: 16px;
+  }
+}
 
+.footer {
+  background-color: #1a242f;
+  padding-top: 140px;
+  &__container {
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    margin-bottom: 100px;
+    @media (max-width: 900px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+  }
+  &__textt {
+    max-width: 340px;
+    margin-bottom: 34px;
+    margin-top: 22px;
+  }
+  &__text {
+    transition: 0.2s;
+  }
+  &__text:hover {
+    color: #858585;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 31px;
+  }
+
+  &__title {
+    margin-bottom: 11px;
+  }
+
+  &__cont {
+    display: flex;
+    flex-direction: column;
+  }
+  &__line {
+    height: 1px;
+    width: 100%;
+    background-color: #303a44;
+    margin-bottom: 15px;
+  }
+  &__copy {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+.quote {
+  &__container {
+  }
+
+  &__quotes {
+    color: #1aa090;
+    font-size: 260px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transform: rotate(180deg);
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__swiper {
+  }
+
+  &__swiper-button-prev {
+  }
+
+  &__swiper-button-next {
+  }
+}
+.review {
+  &__text {
+    padding-top: -400px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 157%;
+    text-transform: capitalize;
+  }
+
+  &__author {
+  }
+
+  &__author-name {
+  }
+
+  &__author-where {
+  }
 }
